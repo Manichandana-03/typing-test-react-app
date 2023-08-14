@@ -111,9 +111,9 @@ function App() {
   }
   
   return (
-    <div className="App has-background-warning app-container">
-      <div className='section'>
-        <div className='is-size-1 has-text-centered has-text-primary'>
+    <div className="app-container">
+      <div className=' countdown' >
+        <div className='is-size-1 has-text-centered '>
           <h2>{countDown}</h2>
         </div>
       </div>
@@ -124,8 +124,8 @@ function App() {
 
       </div>
 
-      <div className='section'>
-        <button className='button is-info button-style is-fullwidth' onClick={start}>Start</button>
+      <div className='button-container'>
+        <button className='button  button-style is-fullwidth' onClick={start}>Start</button>
       </div>
       {status==='started' && (
           <div className='section'>
@@ -154,12 +154,12 @@ function App() {
       <div className='section'>
         <div className='columns'>
           <div className='column has-text-centered'>
-            <p className='is-size-5'>Words per minute</p>
-            <p className='has-text-primary is-size-1'>{correct}</p>
+            <p className='is-size-5 has-text-white'>Words per minute</p>
+            <p className='has-text-warning is-size-1'>{correct}</p>
           </div>
           <div className='column has-text-centered'>
-            <div className='is-size-5'>Accuracy : </div>
-            <p className='has-text-info is-size-1'>
+            <div className='is-size-5 has-text-white'>Accuracy : </div>
+            <p className='has-text-warning is-size-1'>
               {Math.round((correct/(correct + incorrect))*100)} %
             </p>
 

@@ -1,11 +1,27 @@
 .app-container{
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:	#9370DB;
+}
+.button-container{
+    
+    margin-top: 0px;
 }
 .button-style{
     display: flex;
     flex-direction: column;
-
+    margin: 0;
     align-items: center;
     width:25%;
+    color:#9370DB;
     
+}
+.countdown{
+    
+    padding-top: 20px;
+    margin-bottom: 0px;
+    color:#DAF7A6;
 }
